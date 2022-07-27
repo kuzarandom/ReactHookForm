@@ -1,0 +1,257 @@
+.upper {
+  color: green;
+  font-weight: bold;
+}
+
+.lower {
+  color: red;
+  font-weight: bold;
+}
+
+#detailContent {
+  margin-bottom: 0.6em;
+}
+
+.icontext {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#contentDate {
+  color: rgb(120, 153, 153);
+}
+
+#textContent {
+  font-weight: bold;
+}
+
+#iconContent {
+  margin-right: 10px;
+}
+
+#contentFlex {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contentPaper {
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myPaper {
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.inlineContent {
+  padding-top: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  min-width: 390px;
+}
+
+.flexbox {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: block;
+  box-sizing: border-box;
+  width: 360px;
+  max-width: 390px;
+  padding-top: 5rem;
+}
+
+.content {
+  background-color: rgb(255, 255, 255);
+  border: 16px black solid;
+  padding: 16px;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 1.2;
+  color: rgba(58, 89, 117, 1);
+}
+
+.timeHeader {
+  color: rgb(120, 153, 153);
+  font-size: 13px;
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+}
+
+#paperEx {
+  margin-top: 1rem;
+}
+
+.gridFlex {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.chipBox {
+  max-width: 100%;
+  font-size: 0.8125rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #bdbdbd;
+  padding: 10px;
+}
+
+.inlineContent {
+  padding-top: 10px;
+}
+
+#textRed {
+  color: red;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#textGreen {
+  color: green;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.iconText {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.titlesDetail {
+  color: rgba(58, 89, 117, 1);
+}
+
+.girdFlexTitles {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.craditID {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: azure;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.subContainerFirst {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.containerSecond {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.subContainerSecond {
+  display: flex;
+  justify-content: space-around;
+}
+
+.expire {
+  color: white;
+  font-size: 13px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.cvcCode {
+  color: white;
+  font-size: 13px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.chip {
+  height: 30px;
+  width: 40px;
+  background-color: rgb(211, 179, 0);
+  border-radius: 4px;
+  /* display: flex; */
+  margin-left: 30px;
+}
+
+.money {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 1.5rem;
+  font-size: 30px;
+  color: white;
+  /* margin-bottom: 10px; */
+}
+
+.craditCard {
+  background: linear-gradient(
+    90deg,
+    rgba(58, 89, 117, 1) 0%,
+    rgba(31, 51, 75, 1) 100%
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 10px;
+}
+
+.containerFirst {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.containerThird{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

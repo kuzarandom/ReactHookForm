@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+/* .MuiGrid-root{
+  margin-top: 30px;
+} */
+.boxContainer {
+  overflow-y: scroll;
+  background-color: #fff;
+}
+.AppBox {
+  overflow: hidden;
+  background-image: url('https://agrts.co.th/management/img/preservices.39b60217.jpg');
+}
+.BoxHidden {
+  overflow: hidden;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.MuiFormHelperText-root {
+  color: rgba(255, 0, 0, 0.5);
+}
+.lbl-checkbox {
+  display: inline-block;
+  padding: 5em;
+  background: #eee;
+}
+
+.MenuItem::before {
+  border-bottom: 1px solid #2e7d32 !important;
+}
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  color: black;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}

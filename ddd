@@ -1,0 +1,180 @@
+     <Grid item xs={6}>
+                        <Controller
+                            name="เกษตรกร"
+                            control={control}
+                            render={({ field }) => (
+                                <Paper
+                                    elevation={3}
+                                    disabled={isDisabled()}
+                                    checked={selectedValue === 'เกษตรกร'}
+                                    // onClick={() => selectedValue === 'เกษตรกร' ? setSelectedValue('') : setSelectedValue('เกษตรกร')}
+                                    value="เกษตรกร"
+                                    inputProps={{ 'aria-label': 'เกษตรกร' }}
+                                    sx={{
+                                        padding: 3,
+                                        ":active": {
+                                            border: "1px solid blue"
+                                        }
+                                    }}
+                                >
+                                    <Stack
+                                        direction="row"
+                                        justifyContent="space-between"
+                                        alignItems="center"
+                                        spacing={1}
+                                    >
+                                        <Box>
+                                            <Checkbox
+                                                value="เกษตรกร"
+                                                disabled={isDisabled()}
+                                                checked={field.value}
+                                                onClick={(e) => handleFarmer(e)}
+                                                onChange={(e) => (field.onChange(e.target.checked === true ? e.target.value : undefined))}
+                                            />
+                                            <Typography>
+                                                เกษตรกร
+                                            </Typography>
+                                        </Box>
+                                        <img
+                                            src={`https://agrts.co.th/management/img/farmer.6c85882d.svg`}
+                                            loading="lazy"
+                                            width="80px"
+                                        />
+                                    </Stack>
+                                </Paper>
+                            )}
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Controller
+                            name="ผู้ให้บริการ"
+                            control={control}
+                            render={({ field }) => (
+                                <Paper
+                                    elevation={3}
+
+                                    // checked={selectedValue === 'ผู้ให้บริการ'}
+                                    // onClick={() => selectedValue === 'ผู้ให้บริการ' ? setSelectedValue('') : setSelectedValue('ผู้ให้บริการ')}
+                                    value="ผู้ให้บริการ"
+                                    inputProps={{ 'aria-label': 'ผู้ให้บริการ' }}
+                                    sx={{
+                                        padding: 3,
+                                        ":active": {
+                                            border: "1px solid blue"
+                                        }
+                                    }}
+                                >
+                                    <Stack
+                                        direction="row"
+                                        justifyContent="space-between"
+                                        alignItems="center"
+                                        spacing={1}
+                                    >
+                                        <Box>
+                                            <Checkbox
+                                                value="ผู้ให้บริการ"
+                                                disabled={isDisabled()}
+                                                onChange={(e) => (field.onChange(e.target.checked === true ? e.target.value : undefined))}
+                                                onClick={(e) => handleUser(e)}
+                                                checked={field.value}
+                                            />
+                                            <Typography>
+                                            ผู้ให้บริการ
+                                            </Typography>
+                                        </Box>
+                                        <img
+                                            src={`https://agrts.co.th/management/img/business.2476b52d.svg`}
+                                            loading="lazy"
+                                            width="80px"
+                                        />
+                                    </Stack>
+                                </Paper>
+                            )}
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Controller
+                            name="ผู้ประกอบการ"
+                            control={control}
+                            render={({ field }) => (
+                                <Paper
+                                    elevation={3}
+                                    // checked={selectedValue === 'ผู้ประกอบการ'}
+                                    // onClick={() => selectedValue === 'ผู้ประกอบการ' ? setSelectedValue('') : setSelectedValue('ผู้ประกอบการ')}
+                                    value="ผู้ประกอบการ"
+                                    inputProps={{ 'aria-label': 'ผู้ประกอบการ' }}
+
+                                    sx={{
+                                        padding: 3,
+                                    }}
+                                >
+                                    <Stack
+                                        direction="row"
+                                        justifyContent="space-between"
+                                        alignItems="center"
+                                        spacing={1}
+                                    >
+                                        <Box>
+                                            <Checkbox
+                                                disabled={businessman === true}
+                                                checked={field.value}
+                                                onClick={(e) => handleChange(e)}
+                                                onChange={(e) => (field.onChange(e.target.checked === true ? e.target.value : undefined))}
+                                                value="ผู้ประกอบการ"
+                                            />
+                                            <Typography>
+                                                ผู้ประกอบการ
+                                            </Typography>
+                                        </Box>
+                                        <img
+                                            src={`https://agrts.co.th/management/img/booking.fd140495.svg`}
+                                            loading="lazy"
+                                            width="80px"
+                                        />
+                                    </Stack>
+                                </Paper>
+                            )}
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Controller
+                            name="ผู้จัดการ"
+                            control={control}
+                            render={({ field }) => (
+                                <Paper
+                                    elevation={3}
+                                    // checked={selectedValue === 'ผู้ประกอบการ'}
+                                    // onClick={() => selectedValue === 'ผู้ประกอบการ' ? setSelectedValue('') : setSelectedValue('ผู้ประกอบการ')}
+                                    value="ผู้จัดการ"
+                                    sx={{
+                                        padding: 3,
+                                    }}
+                                >
+                                    <Stack
+                                        direction="row"
+                                        justifyContent="space-between"
+                                        alignItems="center"
+                                        spacing={1}
+                                    >
+                                        <Box>
+                                            <Checkbox
+                                                checked={field.value}
+                                                onClick={(e) => handleChange(e)}
+                                                onChange={(e) => (field.onChange(e.target.checked === true ? e.target.value : undefined))}
+                                                value="ผู้จัดการ"
+                                                disabled={businessman === true || watch('ผู้ประกอบการ' !== undefined)}
+                                            />
+                                            <Typography>
+                                                ผู้จัดการ
+                                            </Typography>
+                                        </Box>
+                                        <img
+                                            src={`https://agrts.co.th/management/img/manager.8f766cc2.png`}
+                                            loading="lazy"
+                                            width="80px"
+                                        />
+                                    </Stack>
+                                </Paper>
+                            )}
+                        />
+                    </Grid>

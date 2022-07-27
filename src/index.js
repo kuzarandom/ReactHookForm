@@ -1,15 +1,33 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import VisaCard from './components/VisaCard'
+import VisaCardVM from './components/VisaCardTailsWinds.jsx'
+// import { store } from './app/store'
+import { store } from './store'
+import { Provider } from 'react-redux'
+import ReduxSimple from './ReduxSimple'
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Provider store={store}>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="VisaCard" element={<VisaCard />} />
+          <Route path="VisaCardVM" element={<VisaCardVM />} />
+          <Route path="ReduxSimple" element={<ReduxSimple />} />
+        </Routes>
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,0 +1,56 @@
+.background {
+    @apply flex justify-center items-center
+    bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto h-screen;
+  }
+  
+  .phoneBox {
+    @apply border-t-[60px] border-b-[60px]  border-[16px] border-black w-[360px] rounded-[36px]
+    bg-white p-5
+  }
+  
+  .headerTitle {
+    @apply font-bold text-sm;
+  }
+  
+  .blockContainer {
+    @apply flex justify-center mt-3;
+  }
+  
+  .item {
+    @apply block box-border w-[360px] max-w-sm pt-20;
+  }
+  
+  .craditCard {
+    @apply bg-gradient-to-r from-[#3a5975] to-[#1f334b] w-full
+    rounded-lg;
+  }
+  
+  .craditNumber {
+    @apply flex justify-center items-center text-slate-200 text-lg font-medium;
+  }
+  
+  .myPaper {
+    @apply rounded-md p-2 bg-white shadow-paper-shadow;
+  }
+  
+  #paperEx {
+    @apply mt-1;
+  }
+  
+  .paperContainer {
+    @apply flex w-full justify-around items-center pt-1;
+  }
+  
+  .chipBox {
+    @apply max-w-full inline-flex items-center justify-center h-6 p-[10px] 
+    text-black text-sm
+    bg-transparent border border-[#bdbdbd] rounded-2xl
+  }
+  
+  .gridTitle{
+    @apply flex-wrap box-border flex w-full justify-between pt-[10px] items-center
+  }
+  
+  #contentPaper{
+    @apply mt-3 p-[10px] flex justify-between items-center
+  }
