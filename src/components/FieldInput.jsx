@@ -21,7 +21,7 @@ const FieldInput = ({ fieldname, disabledComponent, fieldColor, valuetest, fillv
     const createSX = () => {
         let color = errorProps ? '#d32f2f' : !!value ? '#2e7d32' : 'rgba(0,0,0,0.54)'
         let sx = {
-            '& .MuiFormHelperText-root': {
+            '& ..MuiInputLabel-root': {
                 color: 'error',
             },
         }

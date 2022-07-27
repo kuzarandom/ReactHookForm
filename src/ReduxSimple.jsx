@@ -5,7 +5,7 @@ import { useForm, Controller } from "react-hook-form";
 import FieldInput from './components/FieldInput';
 
 export default function ReduxSimple() {
-  const count = useSelector((state) => state.counter.value)
+  const count = useSelector((state) => state.value.Account)
   const count2 = useSelector((state) => state)
   const dispatch = useDispatch()
   const { register, control, handleSubmit,
@@ -16,17 +16,24 @@ export default function ReduxSimple() {
 
 
   const onSubmit = (data) => {
-    // console.log(data)
-    dispatch(onchangeValue(data))
+    console.log(data)
+    dispatch(onchangeValue({
+      username: data.username ? data.username : count.username,
+      name: data.name ? data.name : count.name,
+      password: data.password ? data.password : count.password,
+      tel:data.tel ? data.tel : count.tel
+    }))
   }
+  console.log(count)
 
   const [value, setValue] = React.useState('')
   return (
     <div>
       <div class="flex">
         <form>
+          <div>Name</div>
           <Controller
-            name="username"
+            name="name"
             control={control}
             render={({ field }) => {
               return <input
@@ -37,6 +44,7 @@ export default function ReduxSimple() {
 
             }}
           />
+          <div>password</div>
           <Controller
             name="password"
             control={control}
@@ -52,6 +60,7 @@ export default function ReduxSimple() {
           <button type='submit' onClick={handleSubmit(onSubmit)}>submit</button>
         </form>
         <form>
+          <div>tel</div>
           <Controller
             name="tel"
             control={control}
@@ -64,8 +73,9 @@ export default function ReduxSimple() {
 
             }}
           />
+          <div>username</div>
           <Controller
-            name="name"
+            name="username"
             control={control}
             render={({ field }) => {
               return <input

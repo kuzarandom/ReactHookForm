@@ -73,20 +73,22 @@ export default function App() {
         });
     const [selectedValue, setSelectedValue] = useState('Member');
 
-    const Value  = useSelector((state) => ({ ...state }))
+    const Value = useSelector((state) => ({ ...state }))
     // console.log(Value.value.Account)
 
     const dispatch = useDispatch()
     // submit form btn 
     const onSubmit = (data) => {
-        console.log(Value.value.Account);
-        const x = Value.value.Account.concat(data)
-        console.log(x);
-        // setActiveStep(activeStep + 1)
-        dispatch(onchangeValue(x))
+        // console.log(Value.value.Array);
+        dispatch(onchangeValue(data))
+        let obj = {}
+        var objValue = Value.value.Account;
+        console.log(data);
+        Object.assign(obj, objValue);
+        console.log(obj);
+        // dispatch(onchangeValue(data))
 
     }
-
     // member value change
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
