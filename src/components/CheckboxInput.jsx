@@ -1,6 +1,7 @@
 import { Box, Stack, Typography, Paper, Checkbox } from '@mui/material'
 import React, { useContext, useEffect, useState } from 'react'
 import { ContextFocus } from '../App'
+import PropTypes from 'prop-types';
 
 const CheckboxInput = ({ imgProps, values, ChangeFunc, ClickFunc, onDisabled, ...props }) => {
     
@@ -44,3 +45,11 @@ const CheckboxInput = ({ imgProps, values, ChangeFunc, ClickFunc, onDisabled, ..
 }
 
 export default CheckboxInput
+
+CheckboxInput.PropTypes = {
+    imgProps: PropTypes.string,
+    value: PropTypes.string,
+    onDisabled:PropTypes.func,
+    ClickFunc:PropTypes.func,
+    ChangeFunc:PropTypes.func,
+}

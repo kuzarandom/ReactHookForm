@@ -292,7 +292,6 @@ export default function App() {
                                     ถัดไป
                                 </Typography>
                             </Button>
-                            {Value.value.Text}
                         </Stack>
                     </Grid>
                 </Grid>
