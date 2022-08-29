@@ -13,6 +13,7 @@ import VisaCardVM from './components/VisaCardTailsWinds.jsx'
 import { store } from './store'
 import { Provider } from 'react-redux'
 import ReduxSimple from './ReduxSimple'
+import ReduxNext from './ReduxNext'
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,7 @@ root.render(
           <Route path="VisaCard" element={<VisaCard />} />
           <Route path="VisaCardVM" element={<VisaCardVM />} />
           <Route path="ReduxSimple" element={<ReduxSimple />} />
+          <Route path="ReduxNext" element={<ReduxNext />} />
         </Routes>
       </Provider>
     </BrowserRouter>

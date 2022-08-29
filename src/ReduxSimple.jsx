@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { onchangeValue } from './features/counter/counterSlice'
 import { useForm, Controller } from "react-hook-form";
 import FieldInput from './components/FieldInput';
+import ValueRedux from './ReduxNext'
 
 export default function ReduxSimple() {
   const count = useSelector((state) => state.value.Account)
@@ -29,7 +30,7 @@ export default function ReduxSimple() {
   const [value, setValue] = React.useState('')
   return (
     <div>
-      <div class="flex">
+      <div class="flex flex-col">
         <form>
           <div>Name</div>
           <Controller
@@ -88,7 +89,8 @@ export default function ReduxSimple() {
           />
           <button type='submit' onClick={handleSubmit(onSubmit)}>submit</button>
         </form>
-
+        {/* <div>{count.username}</div> */}
+        <ValueRedux/>
       </div>
     </div>
   )

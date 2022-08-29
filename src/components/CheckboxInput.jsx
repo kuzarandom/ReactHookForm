@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ContextFocus } from '../App'
 
 const CheckboxInput = ({ imgProps, values, ChangeFunc, ClickFunc, onDisabled, ...props }) => {
-
+    
     return (
         <Box>
             <Paper elevation={3}
